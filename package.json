@@ -1,0 +1,26 @@
+{
+  "name": "img",
+  "version": "0.0.0",
+  "description": "Create IMG element",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test -b -l chrome -e -q"
+  },
+  "keywords": [
+    "img",
+    "dom",
+    "browser",
+    "browserify",
+    "image",
+    "picture"
+  ],
+  "repository": {
+    "url": "git@github.com:npm-dom/img.git",
+    "type": "git"
+  },
+  "author": "azer",
+  "license": "BSD",
+  "devDependencies": {
+    "prova": "^1.12.1"
+  }
+}
