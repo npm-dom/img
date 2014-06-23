@@ -8,14 +8,14 @@ function img (src, callback) {
     if (locked) return;
     locked = true;
 
-    callback(undefined, el);
+    callback && callback(undefined, el);
   };
 
   el.onerror = function () {
     if (locked) return;
     locked = true;
 
-    callback(new Error('Unable to load "' + src + '"'));
+    callback && callback(new Error('Unable to load "' + src + '"'));
   };
 
   el.src = src;
