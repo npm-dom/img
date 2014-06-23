@@ -1,6 +1,6 @@
 ## img
 
-Create an IMG element with a callback function
+Create an IMG element
 
 ## Install
 
