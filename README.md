@@ -37,7 +37,7 @@ To set timeout:
 var img = require('img')
 var timeout = require('callback-timeout')
 
-img('doesnt-exist.gif', timeout(function (error, el) {
+img('loads-very-slow.gif', timeout(function (error, el) {
   error.message
   // => "Timeout"
 
