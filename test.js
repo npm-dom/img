@@ -2,6 +2,7 @@ var test = require("prova");
 var img = require('./');
 var logo = 'https://avatars2.githubusercontent.com/u/7551498';
 var gif = 'http://azer.bike/cat1.gif';
+var baboon = require('baboon-image-uri');
 
 test('returns an image element', function (t) {
   t.plan(2);
@@ -31,6 +32,12 @@ test('runs the callback when the img is loaded', function (t) {
 
     el.parentNode.removeChild(el);
   });
+});
+
+test('allows crossOrigin options', function (t) {
+  var result = img(baboon, { crossOrigin: 'Anonymous' });
+  t.equal(result.crossOrigin.toLowerCase(), 'anonymous');
+  t.end();
 });
 
 test('fails to load', function (t) {
