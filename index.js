@@ -15,7 +15,7 @@ function img (src, callback) {
     if (locked) return;
     locked = true;
 
-    callback && callback(new Error('Unable to load "' + src + '"'));
+    callback && callback(new Error('Unable to load "' + src + '"'), el);
   };
 
   el.src = src;
