@@ -44,4 +44,14 @@ img('loads-very-slow.gif', timeout(function (error, el) {
 }, 2000))
 ```
 
+Optional crossOrigin parameter:
+
+```js
+var img = require('img')
+
+img('path/to/file.png', { crossOrigin: 'Anonymous' }, function(err, image) {
+    console.log(image)
+})
+```
+
 See `test.js` for more info.
