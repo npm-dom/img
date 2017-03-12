@@ -5,7 +5,7 @@ Create an IMG element
 ## Install
 
 ```bash
-$ npm install img
+$ npm install npm-dom/img
 ```
 
 ## Usage
