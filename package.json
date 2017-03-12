@@ -22,6 +22,6 @@
   "license": "BSD",
   "devDependencies": {
     "baboon-image-uri": "^1.0.1",
-    "prova": "^1.12.1"
+    "prova": "azer/prova"
   }
 }
